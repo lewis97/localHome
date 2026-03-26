@@ -4,91 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
-<style>
-  body {
-    margin: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
-    background: #1f2933;
-    color: #d1d5db;
-  }
-
-  .container {
-    padding: 40px 60px;
-  }
-
-  .date {
-    font-size: 14px;
-    color: #9ca3af;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-size: 64px;
-    margin: 0 0 40px 0;
-    font-weight: 700;
-  }
-
-  h2 {
-    margin-top: 40px;
-    font-size: 18px;
-    color: #9ca3af;
-    letter-spacing: 1px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    margin-top: 20px;
-  }
-
-  .item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .item:hover {
-    color: #38bdf8;
-  }
-
-  .icon {
-    width: 28px;
-    height: 28px;
-    margin-right: 12px;
-  }
-
-  .title {
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .subtitle {
-    font-size: 11px;
-    color: #38bdf8;
-  }
-
-  .column h3 {
-    color: #38bdf8;
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .bookmark {
-    font-size: 14px;
-    margin: 6px 0;
-    text-decoration: none;
-    display: block;
-    color: #d1d5db;
-  }
-
-  .bookmark:hover {
-    color: #38bdf8;
-  }
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -97,29 +13,32 @@
   <div class="date" id="date"></div>
   <h1 id="greeting"></h1>
 
-  <h2>APPLICATIONS</h2>
+  <h2>BOOKMARKS</h2>
 
   <div class="grid">
 
     <div>
-      <a class="item" href="#"><img class="icon" src="./media/google-drive.png"><div><div class="title">Drive</div><div class="subtitle">MY GOOGLE DRIVE</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/google-photos.png"><div><div class="title">Photos</div><div class="subtitle">MY GOOGLE PHOTOS</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/google-calendar.png"><div><div class="title">Calendar</div><div class="subtitle">MY GOOGLE CALENDAR</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/gmail.png"><div><div class="title">Gmail</div><div class="subtitle">MY GOOGLE EMAIL</div></div></a>
+      <a class="item" href="https://drive.google.com/drive/home"><img class="icon" src="./media/google-drive.png"><div><div class="title">Drive</div><div class="subtitle">MY GOOGLE DRIVE</div></div></a>
+      <a class="item" href="https://mail.proton.me/u/22/inbox"><img class="icon" src="./media/proton-mail.png"><div><div class="title">Proton Mail</div><div class="subtitle">PROTON MAIL</div></div></a>
+      <a class="item" href="https://goplay.tools/"><img class="icon" src="./media/go.ico"><div><div class="title">Go Playground</div><div class="subtitle">BETTER GO PLAYGORUND</div></div></a>
     </div>
 
     <div>
-      <a class="item" href="#"><img class="icon" src="./media/proton-mail.png"><div><div class="title">Proton Mail</div><div class="subtitle">PROTON MAIL</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/simplelogin.png"><div><div class="title">SimpleLogin</div><div class="subtitle">EMAIL ALIAS MANAGER</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/microsoft-outlook.png"><div><div class="title">Outlook</div><div class="subtitle">OUTLOOK WEB APP</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/github-light.png"><div><div class="title">GitHub</div><div class="subtitle">MY GITHUB REPOS</div></div></a>
+      <a class="item" href="https://photos.google.com/?pli=1"><img class="icon" src="./media/google-photos.png"><div><div class="title">Photos</div><div class="subtitle">MY GOOGLE PHOTOS</div></div></a>
+      <a class="item" href="https://app.simplelogin.io/dashboard"><img class="icon" src="./media/simplelogin.png"><div><div class="title">SimpleLogin</div><div class="subtitle">EMAIL ALIAS MANAGER</div></div></a>
+      <a class="item" href="https://excalidraw.com/"><img class="icon" src="./media/excalidraw.png"><div><div class="title">Excalidraw</div><div class="subtitle">INTERACTIVE WHITEBOARD</div></div></a>
     </div>
 
     <div>
-      <a class="item" href="#"><img class="icon" src="./media/go.ico"><div><div class="title">Go Playground</div><div class="subtitle">BETTER GO PLAYGORUND</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/excalidraw.png"><div><div class="title">Excalidraw</div><div class="subtitle">INTERACTIVE WHITEBOARD</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/chatgpt.png"><div><div class="title">ChatGPT</div><div class="subtitle">ASK AI</div></div></a>
-      <a class="item" href="#"><img class="icon" src="./media/youtube.png"><div><div class="title">YouTube</div><div class="subtitle">YOUTUBE HOME PAGE</div></div></a>
+      <a class="item" href="https://calendar.google.com/calendar/u/0/r/month"><img class="icon" src="./media/google-calendar.png"><div><div class="title">Calendar</div><div class="subtitle">MY GOOGLE CALENDAR</div></div></a>
+      <a class="item" href="https://outlook.live.com/mail/"><img class="icon" src="./media/microsoft-outlook.png"><div><div class="title">Outlook</div><div class="subtitle">OUTLOOK WEB APP</div></div></a>
+      <a class="item" href="https://chatgpt.com/"><img class="icon" src="./media/chatgpt.png"><div><div class="title">ChatGPT</div><div class="subtitle">ASK AI</div></div></a>
+    </div>
+
+    <div>
+      <a class="item" href="https://mail.google.com/mail/u/0/?hl=en-GB#inbox"><img class="icon" src="./media/gmail.png"><div><div class="title">Gmail</div><div class="subtitle">MY GOOGLE EMAIL</div></div></a>
+      <a class="item" href="https://github.com/repos"><img class="icon" src="./media/github-light.png"><div><div class="title">GitHub</div><div class="subtitle">MY GITHUB REPOS</div></div></a>
+      <a class="item" href="https://www.youtube.com/"><img class="icon" src="./media/youtube.png"><div><div class="title">YouTube</div><div class="subtitle">YOUTUBE HOME PAGE</div></div></a>
     </div>
 
   </div>
