@@ -81,4 +81,23 @@
     color: #38bdf8;
   }
 
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: all 0.15s ease;
+}
 
+.item:hover {
+  color: #38bdf8;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.item:active {
+  transform: translateY(0px) scale(0.98);
+}
