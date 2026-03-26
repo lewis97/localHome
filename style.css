@@ -144,3 +144,20 @@
     transform: translateY(-10px);
   }
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #9ca3af;
+}
