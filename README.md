@@ -1,4 +1,4 @@
-# localHome
+# LocalHome
 A static local homepage alternative to Flame for when the server is not running.
 
 ## Usage
