@@ -2,18 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-// Redirect to the flame server if it is running:
-async function checkServer() {
-  try {
-    const res = await fetch("http://home.home", { mode: "no-cors" });
-    window.location.href = "http://home.home";
-  } catch (e) {
-    console.log("Server not reachable, staying local.");
-  }
-}
-checkServer();
-</script>
+    <!-- // Redirect to the flame server if it is running: -->
+  <script src="./scripts/server-check-redirect.js" type="text/javascript"></script>
   <meta charset="UTF-8">
   <title>LocalHome Dashboard</title>
   <style>
@@ -53,6 +43,7 @@ checkServer();
 <body>
 
 <h1>PLACEHOLDER Home</h1>
+<p>v0.1</p>
 
 <div class="grid">
   <a class="card" href="http://home.home">🏠 Server</a>
