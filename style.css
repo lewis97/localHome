@@ -108,7 +108,7 @@
   right: 20px;
   background: #7f1d1d;
   color: #fca5a5;
-  padding: 12px 16px;
+  padding: 12px 16px 18px 16px; /* extra bottom space for bar */
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -117,6 +117,28 @@
   opacity: 0;
   transform: translateY(-10px);
   animation: fadeIn 0.3s forwards;
+  overflow: hidden;
+}
+
+.notif-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #fca5a5;
+  transform-origin: left;
+  animation: progressBar 3s linear forwards;
+}
+
+/* shrink from full → empty */
+@keyframes progressBar {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
 }
 
 .notification.hide {
@@ -129,6 +151,11 @@
   color: #fca5a5;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* Pause progress on hover */
+.notification:hover .notif-progress {
+  animation-play-state: paused;
 }
 
 @keyframes fadeIn {
