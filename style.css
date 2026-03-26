@@ -161,3 +161,25 @@ body {
   font-size: 12px;
   color: #9ca3af;
 }
+
+.footer a {
+  text-decoration: underline;
+  color: #9ca3af;
+}
+
+.footer a:link {
+  text-decoration: underline;
+}
+
+.footer a:visited {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #0099ff;
+}
+
+.footer a:active {
+  text-decoration: underline;
+}
