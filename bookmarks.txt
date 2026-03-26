@@ -1,0 +1,35 @@
+
+!! THIS FILE IS NOT USED ANYWHERE - IT IS ONLY FOR PLANNING WHAT BOOKMARKS WERE NEEDED AND KEEPING TRACK OF IMG LINKS !!
+- Google Drive
+- Google Photos
+- Google cal
+- Gmail
+-=-=
+- Proton mail
+- Simplelogin
+- Outlook
+- Github
+-=-=
+- Go playground
+- Excalidraw
+- ChatGPT
+- Youtube
+
+
+Projects list?
+
+
+icon links (can search via https://github.com/selfhst/icons/tree/master/png/githudewb.png)
+
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/google-drive.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/google-photos.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/proton-mail.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/simplelogin.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/microsoft-outlook.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/github.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/go.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/excalidraw.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/chatgpt.png
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/youtube.png
+
+https://cdn.jsdelivr.net/gh/selfhst/icons/png/google-mail.png
