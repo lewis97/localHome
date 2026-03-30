@@ -9,4 +9,4 @@ async function checkServer() {
 }
 
 // Comment out for testing - force using local version
-// checkServer()
+checkServer()
