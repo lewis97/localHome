@@ -118,6 +118,8 @@
   transform: translateY(-10px);
   animation: fadeIn 0.3s forwards;
   overflow: hidden;
+  max-width: min(440px, calc(100vw - 40px));
+  flex-wrap: wrap;
 }
 
 .notif-progress {
@@ -151,6 +153,11 @@
   color: #fca5a5;
   font-size: 16px;
   cursor: pointer;
+}
+
+#notification-action {
+  color: #fee2e2;
+  text-decoration: underline;
 }
 
 /* Pause progress on hover */
