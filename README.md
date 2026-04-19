@@ -7,13 +7,19 @@ The aim is to have the static homepage `home.html` used when the Flame instance 
 
 ### Redirect logic
 
-The following is used to determine if the flame server is runnning and if so redirect to it...
+The fallback page only probes `http://home.home/` when it is itself loaded from a non-HTTPS origin. If the fallback page is served over HTTPS, browsers block background requests to that HTTP address as mixed content, so the page stays local and offers a direct link instead.
 
 ```javascript
+const SERVER_URL = "http://home.home/";
+
 async function checkServer() {
+  if (window.location.protocol === "https:") {
+    return;
+  }
+
   try {
-    const res = await fetch("http://home.home", { mode: "no-cors" });
-    window.location.href = "http://home.home";
+    await fetch(SERVER_URL, { mode: "no-cors" });
+    window.location.replace(SERVER_URL);
   } catch (e) {
     console.log("Server not reachable, staying local.");
   }
